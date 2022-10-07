@@ -1,103 +1,306 @@
-<!-- Flexbox example: Use display: flex; to create a flex container.
-Use justify-content to define the horizontal alignment of items.
-Use align-items to define the vertical alignment of items.
-Use flex-direction if you need columns instead of rows.
-Use the row-reverse or column-reverse values to flip item order.
-Use order to customize the order of individual elements.
-Use align-self to vertically align individual items.
-Use flex to create flexible boxes that can stretch and shrink. -->
-
-
-
-
-
 <!DOCTYPE html>
-<html lang='en'>
-  <head>
+<html>
+<head>
+<title>C5 From Impact to Recovery & Question of Heritage</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="main.css">
+</head>
+<body>
 
-    <meta charset='UTF-8'/>
-    <title>Some Web Page</title>
-    <link rel='stylesheet' href='styles.css'/>
-    <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-  <h2> Website Creation and Enhancement </h2>
-    <div class="container">
-      <!--<img src="'john-schnobrich-FlPc9_VocJ4-unsplash.jpg" alt="Working Together Picture" style="width:100%;"> -->
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar" id="myNavbar">
+    <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+      <i class="fa fa-bars"></i>
+    </a>
+    <a href="#home" class="w3-bar-item w3-button">HOME</a>
+    <a href="#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> ABOUT</a>
+    <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> C5 REVIEWS</a>
+    <a href="#reviews" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> HERITAGE REVIEWS</a>
+    <a href="#purchase" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> PURCHASE</a>
+    <a href="#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACT</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">
+      <i class="fa fa-search"></i>
+    </a>
+  </div>
 
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+    <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
+    <a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">C5 REVIEWS</a>
+    <a href="#reviews" class="w3-bar-item w3-button" onclick="toggleFunction()">HERITAGE REVIEWS</a>
+    <a href="#purchase" class="w3-bar-item w3-button" onclick="toggleFunction()">PURCHASE</a>
+    <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
+    <a href="#" class="w3-bar-item w3-button">SEARCH</a>
+  </div>
+</div>
 
-    <div class="centered">
-    <h1> <br> Working Together to Propel Your Business </h1>
-    <div class ='thoughts'>
-         <div class = 'Visions'> Visions </div>
-         <div class = 'Dreams' > Dreams </div>
-         <div class = 'goals'> Goals </div>
-
+<!-- First Parallax Image with Logo Text -->
+<div class="bgimg-1 w3-display-container " id="home">
+  <div class="w3-display-middle" style="white-space:nowrap;">
+    <br> <br> <br> <br> <br> <br>
+   <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">JUDITH JO PACHINO </span>
+    <br>
+    <span class="w3-center w3-padding-large"> AUTHOR</span>
+    <!--Author <span class="w3-hide-small">AUTHOR</span>AUTHOR-->
+  </span> 
+    
+      <!--<span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity"> JUDITH JO PACHINO 
+          </span> 
+          <span class="w3-center  w3-padding-large w3-black w3-xlarge  w3-animate-opacity w3-wide">  AUTHOR 
+          </span> -->   
     </div>
+ 
+</div>
+
+<!-- Container (About Section) -->
+<div class="w3-content w3-container w3-padding-64" id="about">
+  <h3 class="w3-center">ABOUT ME</h3>
+  <p class="w3-center"><em>With love, I have authored two books. Together they tell much of my life story. </em></p>
+  <p>
+    
+  </p>
+  <div class="w3-row">
+    <div class="w3-col m6 w3-center w3-padding-large">
+      <p><b><i class="fa fa-user w3-margin-right"></i> C5: From Impact to Recovery</b></p><br>
+      <img src="./images/C5Image.jpg" class="w3-round w3-image  w3-hover-opacity-off" alt="Photo of Me" width="400" height="233">
     </div>
 
-  </head>
-  <body>
+    <!-- Hide this text on small devices 
+    <div class="w3-col m6 w3-hide-small w3-padding-large"> -->
+      <div class=" w3-col m6 w3-padding-large">
+      <p> <br> <br> <br><br>  C5 is my husband's story.  He was riding his bicycle a short distance from our home in Baltimore, MD.  As he was reaching his stride, a black sedan appeared on the opposite side of the two lane residential street.
+        The driver, not wishing to wait the second or two for Mel to pass, decided to turn left.  He cut Mel off.  With no time to stop or manuever, Mel hit the car.  The impact sent him flying into the sky and then crashing face first into the road.  C5 is Mel's story.  The story of an indomitable spirit,  beyond exceptional medical care ,  and unparalleled community support.
+        </p>
+        <p> CHECK IT OUT HERE-->   
+        <a href="https://www.amazon.com/C5-Recovery-Mrs-Judith-Pachino/dp/0692966056/">C5: From Impact to Recovery</a> </p>
+    </div>
+  </div>
+<!-- Container (Portfolio Section) -->
+<div class="w3-content w3-container w3-padding-64" id="portfolio">
+  <h3 class="w3-center">C5 Reviews</h3>
+  <p class="w3-center"><em>Sampling of Heartfelt Reviews from Across the Globe.<br> Click on the images to make them bigger</em></p><br>
 
-  <!--  <div class='menu-container'>
-          <div class='menu'>
-            <div class='date'>Aug 14, 2016</div>
-            <div class ='links'>
-            <div class='signup'>Sign Up</div>
-            <div class='login'>Login</div>
+  <!--Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
+  <div class="w3-row-padding w3-center">
+    <div class="w3-col  m8">
+      <img src="./images/Screenshot 2022-10-06 114717.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Review1">
+    </div>
+
+    <div class="w3-col m8">
+      <img src="./images/Screenshot 2022-10-06 114736.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Review2">
+    </div>
+
+    <div class="w3-col m8">
+      <img src="./images/Screenshot 2022-10-06 120118.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Review3">
+    </div>
+    
+  <div class="w3-row">
+    <div class="w3-col m6 w3-center w3-padding-large">
+      <p><b><i class="fa fa-user w3-margin-right"></i> A Question of Heritage</b></p><br>
+      <img src="./images/QuestionHeritage.jpg" class="w3-round w3-image  w3-hover-opacity-off" alt="Photo of A Question of Heritage Cover" width="400" height="233">
+    </div>
+
+    <!-- Hide this text on small devices 
+    <div class="w3-col m6 w3-hide-small w3-padding-large"> -->
+      <div class=" w3-col m6 w3-padding-large">
+      <p> <br> <br> <br><br>  A Question of Heritage is a story of adoption.  In this introspective memoir written as fiction, I recount my quest to find my biological family and roots.  This story resonates with the angst of those 
+        in the adoption triad, yet leaves the reader with insight and hope.
+        </p>
+        <p> CHECK IT OUT HERE-->   
+          <a href="https://www.amazon.com/Question-Heritage-Adoption-Story/dp/0615978452/">A Question of Heritage</a> </p> 
+    </div>
+  </div>
+  
+  <!--<p class="w3-large w3-center w3-padding-16">Im really good at:</p>
+  <p class="w3-wide"><i class="fa fa-camera"></i>Writing</p>
+  <div class="w3-light-grey">
+    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:90%">90%</div>
+  </div>
+  <p class="w3-wide"><i class="fa fa-laptop"></i>Web Design</p>
+  <div class="w3-light-grey">
+    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:85%">85%</div>
+  </div>
+  <p class="w3-wide"><i class="fa fa-photo"></i>Photoshop</p>
+  <div class="w3-light-grey">
+    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:75%">75%</div>
+  </div>-->
+<!--</div> -->
+
+<!--<div class="w3-row w3-center w3-dark-grey w3-padding-16">
+  <div class="w3-quarter w3-section">
+    <span class="w3-xlarge">14+</span><br>
+    Partners
+  </div>
+  <div class="w3-quarter w3-section">
+    <span class="w3-xlarge">55+</span><br>
+    Projects Done
+  </div>
+  <div class="w3-quarter w3-section">
+    <span class="w3-xlarge">89+</span><br>
+    Happy Clients
+  </div>
+  <div class="w3-quarter w3-section">
+    <span class="w3-xlarge">150+</span><br>
+    Meetings
+  </div>
+</div> -->
+
+<!-- Second Parallax Image with Portfolio Text -->
+<!--<div class="bgimg-2 w3-display-container w3-opacity-min">
+  <div class="w3-display-middle">
+    <span class="w3-xxlarge w3-text-white w3-wide">PORTFOLIO</span>
+  </div>
+</div> -->
+
+
+
+   
+    <div class="w3-content w3-container w3-padding-64" id="reviews">
+      <h3 class="w3-center">A Question of Heritage Reviews</h3>
+      <p class="w3-center"><em>Sampling of Heartfelt Reviews from Across the Globe.<br> Click on the images to make them bigger</em></p>
+      <br>
+    
+      <!--Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
+      <div class="w3-row-padding w3-center w3-padding-64">
+        <div class="w3-col m8 ">
+          <img src="./images/H1.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Review1">
+        </div>
+    
+        <div class="w3-col m8">
+          <img src="./images/H2.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Review2">
+        </div>
+    
+        <div class="w3-col m8">
+          <img src="./images/H3.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Review3">
+        </div>
+    </div>
+  </div>
+
+  <!--<div class="w3-row-padding w3-center w3-section">
+    <div class="w3-col m3">
+      <img src="/w3images/p5.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="The mist">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="/w3images/p6.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="My beloved typewriter">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="/w3images/p7.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Empty ghost train">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="/w3images/p8.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Sailing">
+    </div>
+    <button class="w3-button w3-padding-large w3-light-grey" style="margin-top:64px">LOAD MORE</button>
+  </div>
+</div> -->
+
+<!-- Modal for full size images on click-->
+<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+  <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
+  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+    <img id="img01" class="w3-image">
+    <p id="caption" class="w3-opacity w3-large"></p>
+  </div>
+</div>
+
+ <!--Third Parallax Image with Portfolio Text 
+<div class="bgimg-3 w3-display-container w3-opacity-min">
+  <div class="w3-display-middle">
+     <span class="w3-xxlarge w3-text-white w3-wide">CONTACT</span>
+  </div>
+</div> -->
+
+<!-- Container (Contact Section) -->
+<div class="w3-content w3-container w3-padding-64" id="purchase">
+  <h3 class="w3-center">WHERE TO PURCHASE MY BOOKS</h3> <br>
+  <a href="https://www.amazon.com/C5-Recovery-Mrs-Judith-Pachino/dp/0692966056/">C5: From Impact to Recovery</a>
+  <br>
+  <br><a href="https://www.amazon.com/Question-Heritage-Adoption-Story/dp/0615978452/">A Question of Heritage</a>
+  <br>
+  <h3 class="w3-center color:blue">ENJOY DEAR FRIENDS!!!</h3> <br>
+</div>
+  
+<div class="w3-content w3-container w3-padding-64" id="contact">
+  <h3 class="w3-center">CONNECT WITH ME</h3> <br>
+  <img src="./images/IMG-20191006-WA0006b.jpg" class="w3-round w3-image radius:50 w3-hover-opacity-off" alt="Photo of Me" width="80" height="70">
+  <p class="w3-center"><em>I'd love your feedback!</em></p>
+
+  <div class="w3-center">
+    <!--<div class="w3-col m4 w3-container">
+      <img src="/w3images/map.jpg" class="w3-image w3-round" style="width:100%">-->
+    <!--</div>
+    <div class="w3-col m8 w3-panel ">
+      <div class="w3-large w3-margin-bottom ">-->
+        <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Modiin, Israel<br>
+       <!-- <i class="fa fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Modiin, Israel<br> -->
+        <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email: judith.pachino@gmail.com<br>
+      </div>
+      <p><em>Enjoy a nice hot tea or coffee  <i class="fa fa-coffee"></i> while you fill in your thoughts, comments or review below.</em></p>
+      <form action="/action_page.php" target="_blank">
+        <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+          <div class="w3-half">
+            <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
+          </div>
+          <div class="w3-half">
+            <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
           </div>
         </div>
-</div> -->
-<div class='menu-container'>
-  <div class='menu'>
-    <div class='date'>June 8, 2022</div>
-    <div class='signup'>About</div>
-    <div class='login'>Testimonials</div>
+        <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
+        <button class="w3-button w3-black w3-right w3-section" type="submit">
+          <i class="fa fa-paper-plane"></i> SEND MESSAGE
+        </button>
+      </form>
+    </div>
   </div>
 </div>
-<!--  <h1> Working Together to Propel Your Business </h1> -->
-<div class='header-container'>
-  <div class='header'>
-    <div class='subscribe'>Subscribe &#9662;</div>
-<!--    <div class='logo'><img src='D:\Atom\Project 1\Book Files\Flexbox\images\awesome-logo.svg'/></div>-->
-    <div id ='article'><img src= 'john-schnobrich-FlPc9_VocJ4-unsplash.jpg'/>
 
-  <!--  <h1> Working Together to Propel Your Business </h1>--> </div>
-    <div class='social'><img src='images/social-icons.svg'></div>
-  </div>
-  </div>
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
+  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+ <!--  <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+  </div> -->
+  
+  <h6>Judith Jo Pachino @2022</h6>
+</footer>
+ 
+<script>
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
 
-  <p>It's important to have a vision, a goal, a dream. <br/> Making a website can help
-      you move toward your visions, goals and dreams. <br> Small but significant steps.
-      Make your presence known through a website that will speak to your target
-      audience. <br> With clear and consistent wording and visuals you can get your
-      message across and build your business. <br> <br></p>
-  <h4>
-       I can help you to do this.  I can help
-      you take that step.</h4>
-<div class='button-container'>
-  <button type="button">Let's TALK</button>
-</div>
-<!--<div class='photo-grid-container'>
-  <div class='photo-grid'>
-    <div class='photo-grid-item first-item'>
-      <img src='images/one.svg'/>
-    </div>
-    <div class='photo-grid-item'>
-      <img src='images/two.svg'/>
-    </div>
-    <div class='photo-grid-item'>
-      <img src='images/three.svg'/>
-    </div>
+// Change style of navbar on scroll
+window.onscroll = function() {myFunction()};
+function myFunction() {
+    var navbar = document.getElementById("myNavbar");
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
+    } else {
+        navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
+    }
+}
 
-
-    </div>
-  </div>
--->
-<div class='footer'>
-
-  <div class='footer-item footer-one'></div>
-  <div class='footer-item footer-two'></div>
-  <div class='footer-item footer-three'></div>
-</div>
+// Used to toggle the menu on small screens when clicking on the menu button
+function toggleFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+</script>
+<!--<script src="main.js"></script>-->
 </body>
 </html>
